@@ -7,21 +7,28 @@ import {
   RouterProvider,
   Routes,
 } from "react-router";
-import App from "./App.jsx";
 import Shop from "./pages/Shop/Shop.jsx";
 import Error404 from "./pages/NotFound.jsx";
+import Layout from "./pages/Layout.jsx";
+import Home from "./pages/Home/Home.jsx";
 
 const root = document.getElementById("root");
 
 const router = createBrowserRouter([
   {
     path: "/",
-    Component: App,
+    Component: Layout,
     errorElement: <Error404 />,
-  },
-  {
-    path: "shopping",
-    Component: Shop,
+    children: [
+      {
+        path: "/",
+        Component: Home,
+      },
+      {
+        path: "shopping",
+        Component: Shop,
+      },
+    ],
   },
 ]);
 

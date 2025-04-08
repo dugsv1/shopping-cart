@@ -1,9 +1,7 @@
-import Navbar from "../../components/Navbar/Navbar";
-
 export default function Shop() {
   return (
     <>
-      <Navbar />
+      <h1>Shopping page</h1>{" "}
     </>
   );
 }

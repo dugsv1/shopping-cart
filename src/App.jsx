@@ -1,11 +1,10 @@
 import "./App.css";
 import { Link } from "react-router";
-import Navbar from "./components/Navbar/Navbar";
-
+import Layout from "./pages/Layout";
 function App() {
   return (
     <>
-      <Navbar />
+      <Layout></Layout>
     </>
   );
 }
