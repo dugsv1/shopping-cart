@@ -7,7 +7,7 @@ import {
   RouterProvider,
   Routes,
 } from "react-router";
-import Shop from "./pages/Shop/Shop.jsx";
+import Reports from "./pages/Reports/Reports.jsx";
 import Error404 from "./pages/NotFound.jsx";
 import Layout from "./pages/Layout.jsx";
 import Home from "./pages/Home/Home.jsx";
@@ -25,8 +25,8 @@ const router = createBrowserRouter([
         Component: Home,
       },
       {
-        path: "shopping",
-        Component: Shop,
+        path: "/reports",
+        Component: Reports,
       },
     ],
   },
