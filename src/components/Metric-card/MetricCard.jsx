@@ -1,4 +1,4 @@
-import styles from "./MetricCard.modules.css";
+import styles from "./MetricCard.module.css";
 
 export default function MetricCard(props) {
   const { major, minor } = props;
